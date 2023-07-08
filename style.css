@@ -288,3 +288,24 @@ right: 16.05%;
 top: 305%;
 bottom: 22.08%;
 }
+.test1{
+    position: absolute;
+    right: 16.05%;
+    left: 12%;
+    top: 300%;
+    bottom: 22.08%; 
+}
+.test2{
+    position: absolute;
+    right: 16.05%;
+    left: 42%;
+    top: 300%;
+    bottom: 22.08%; 
+}
+.test3{
+    position: absolute;
+    right: 16.05%;
+    left: 72%;
+    top: 300%;
+    bottom: 22.08%; 
+}
