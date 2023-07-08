@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#000235;
+    --accent-color:#ffffff;
+    --dark-blue:#312A64;
+    --light-blue:#85CFCF;
+}
+body{
+    background-color: #000235;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440;
+    height: 50px;
+    margin: 0 auto;
+    font-family: outfit;
+    background-color:var(--dark-blue);
+    
+}
+
+.header_title{
+ margin: 0;
+ display: flex;
+ align-items: center;
+ margin-left: 150px;   
+}
+.header span{
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: 12px;
+    color: var(--accent-color);
+}
+.header_navigation {
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+.header_navigation a {
+    text-decoration: none;
+    margin-left: 29px;
+    font-size: 26px;
+    color: var(--accent-color);
+}
+.parent {
+    position: relative;
+}
+.parent.active .btn {
+    transform: translateX(210px);
+}
+.input {
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 40px;
+    transition: width 0.3s ease;
+}
+.input::placeholder {
+    color: red;
+}
+.btn {
+    width: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background:var(--light-blue);
+    display: inline;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+.fa-solid {
+    color: #ffffff;
+}
+.parent.active .input {
+    width: 200px;
+}
+.header-right{
+    width: 35%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
+
+.header_navigation i{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+/* header ends*/
+
+/* main_hero  */
+.main_hero h1
+{
+position: absolute;
+left: 12.18%;
+right: 44.26%;
+top: 14.62%;
+bottom: 87.63%;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 68px;
+text-transform: capitalize;
+
+color: #F6F5F5;}
+
+.main_hero h4
+{
+position: absolute;
+left: 12%;
+right: 40%;
+top: 51%;
+bottom: 85%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+color: #F6F5F5;}
+
+.main_hero img
+{
+position: absolute;
+left: 55%;
+right: 9%;
+top: 5%;
+bottom: 80%;
+}
+.contact{
+position: absolute;
+left: 12.18%;
+right: 76.6%;
+top: 70%;
+bottom: 80.96%;
+background: #85CFCF;
+border-radius: 9px;
+height: 30px;
+}
+.read{
+position: absolute;
+left: 28.12%;
+right: 60.66%;
+top: 70%;
+bottom: 80.96%;
+height: 30px;
+background: #312A64;
+border-radius: 9px;
+}
+.feature{
+position: absolute;
+left: 12.18%;
+right: 11.11%;
+top: 82%;
+bottom: 77.1%;
+background-color: var(--dark-blue);
+height: 76px;
+
+
+}
+.feat{
+left: 12.18%;
+position: absolute;
+right: 11.11%;
+top: 75%;
+color: #ffffff;
+}
+.hero img {
+position: absolute;
+left: 12.18%;
+right: 11.31%;
+top: 100%;
+bottom: 60.31%;
+}
+.hero h1{
+position: absolute;
+left: 48.58%;
+right: 12.1%;
+top: 120%;
+bottom: 66.79%;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 88px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F6F5F5;
+}
+.hero h2{
+position: absolute;
+left: 48.5%;
+right: 12.05%;
+top: 152.28%;
+bottom: 60.37%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 48px;
+color: #F6F5F5;
+}
+.hero_end img{
+position: absolute;
+left: 52.69%;
+right: 13.26%;
+top: 180%;
+bottom: 46.23%;
+}
+.hero_end h1{
+    position: absolute;
+    left: 13.39%;
+    right: 46.56%;
+    top: 190%;
+    bottom: 51.15%;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 88px;
+    text-transform: capitalize;
+    
+    color: #F6F5F5;
+
+}
+.hero_end h3{
+position: absolute;
+left: 13.66%;
+right: 45.68%;
+top: 220%;
+bottom: 47.13%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 48px;
+color: #F6F5F5;
+}
+.testimonial h1{
+position: absolute;
+left: 41.37%;
+right: 33.61%;
+top: 250%;
+bottom: 45.38%;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 32.2673px;
+line-height: 30px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+.testimonial h3{
+position: absolute;
+left: 26.92%;
+right: 30.79%;
+top: 255%;
+bottom: 38.82%;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 75.2903px;
+line-height: 95px;
+text-align: center;
+text-transform: capitalize;
+color: #F6F5F5;
+}
+.testimonial img{
+position: absolute;
+left: 13.59%;
+right: 16.05%;
+top: 305%;
+bottom: 22.08%;
+}
