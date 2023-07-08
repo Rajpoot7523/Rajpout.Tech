@@ -89,6 +89,11 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
+@media screen and (max-width: 500px) {
+    .main{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
 
 .header_navigation i{
     text-decoration: none;
@@ -166,8 +171,6 @@ top: 82%;
 bottom: 77.1%;
 background-color: var(--dark-blue);
 height: 76px;
-
-
 }
 .feat{
 left: 12.18%;
