@@ -284,7 +284,7 @@ color: #F6F5F5;
 
 #box1{
     width: 332.209px;
-    height: 448.93px;
+    height: 350px;
     border-radius: 23.663px;
     opacity: 0.800000011920929;
     background-color: #332B66;
@@ -296,7 +296,7 @@ color: #F6F5F5;
 }
 #box2{
     width: 332.209px;
-    height: 448.93px;
+    height: 350px;
     border-radius: 23.663px;
     opacity: 0.800000011920929;
     background-color: #332B66;
@@ -308,7 +308,7 @@ color: #F6F5F5;
 }
 #box3{
     width: 332.209px;
-    height: 448.93px;
+    height: 350px;
     border-radius: 23.663px;
     opacity: 0.800000011920929;
     background-color: #332B66;
@@ -340,7 +340,7 @@ color: #F6F5F5;
     bottom: 22.08%; 
 }
 
-.testimonial h2{
+.Box h2{
     position: absolute;
     left: 18%;
     right: 33.61%;
@@ -354,7 +354,7 @@ color: #F6F5F5;
     text-transform: capitalize;
     color: #FFFFFF;
 }
-.testimonial h4{
+.Box h4{
     display: flex;
     width: 241.557px;
     height: 179.543px;
@@ -369,6 +369,77 @@ color: #F6F5F5;
     position: absolute;
     left: 15%;
     right: 33.61%;
-    top: 320%;
+    top: 317%;
     bottom: 45.38%;
+}
+.Box2 h2{
+    display: flex;
+width: 156.156px;
+flex-direction: column;
+justify-content: center;
+    position: absolute;
+    left: 45%;
+    right: 33.61%;
+    top: 312%;
+    bottom: 45.38%;
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 32.983px;
+font-style: normal;
+font-weight: 400;
+line-height: 30.235px;
+}
+.Box2 h4{
+    display: flex;
+width: 274.907px;
+flex-direction: column;
+justify-content: center;
+    position: absolute;
+    left: 41%;
+    right: 33.61%;
+    top: 330%;
+    bottom: 45.38%;
+color: #FFF;
+font-family: Outfit;
+font-size: 25.649px;
+font-style: normal;
+font-weight: 400;
+line-height: 29.924px;
+}
+.Box3 h2{
+    display: flex;
+width: 108.676px;
+flex-direction: column;
+justify-content: center;
+    position: absolute;
+    left: 72%;
+    right: 33.61%;
+    top: 312%;
+    bottom: 45.38%;
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 32.983px;
+font-style: normal;
+font-weight: 400;
+line-height: 30.235px;
+}
+.Box3 h4{
+    display: flex;
+width: 312.52px;
+height: 239px;
+flex-direction: column;
+justify-content: center;
+    position: absolute;
+    left: 66%;
+    right: 40%;
+    top: 313%;
+    bottom: 45.38%;
+color: #FFF;
+font-family: Outfit;
+font-size: 25.649px;
+font-style: normal;
+font-weight: 400;
+line-height: 29.924px;
 }
