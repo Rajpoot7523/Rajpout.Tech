@@ -497,8 +497,8 @@ background: #000;
     top: 270px; 
 }
 #sta h2{
-    display: flex;
-width: 441.583px;
+display: flex;
+width: 350px;
 flex-direction: column;
 justify-content: center;
 color: #FFF;
@@ -510,4 +510,51 @@ font-weight: 400;
 line-height: normal;
     position: absolute;
     top: 16px; 
+}
+.container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 90%;
+    margin: 210% auto 60px;
+}
+.container>div>h2{
+    color: #F6F5F5;
+    font-family: sans-serif;
+    font-size: 24px;
+    padding: 20px 0;
+}
+.container>div>ul{
+    list-style-type: none;   
+}
+.container>div>ul>li{
+    margin: 16px 0;
+    cursor: pointer;
+}
+.container>div>ul>li>a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+    position: relative;
+    padding: 2px;
+    color: var(--accent-color);
+    transition: all 0.4s;
+}
+.container>div>ul>li>a:hover{
+    left: 8px;
+}
+.container>div>form{
+    background-color: var(--light-blue);
+    margin: 20px 0 10px;
+    padding: 6px 14px;
+    border-radius: 7px;
+    width: 100%;
+}
+.container>div>form>input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 270px;
+    background-color: transparent;
+    color: #F6F5F5;
 }
