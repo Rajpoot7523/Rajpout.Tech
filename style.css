@@ -16,7 +16,7 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    max-width: 1440;
+    max-width: 1440px;
     height: 50px;
     margin: 0 auto;
     font-family: outfit;
@@ -30,9 +30,7 @@ body{
  align-items: center;
  margin-left: 150px;   
 }
-.header img{
-    size: 50px;
-}
+
 .header span{
     font-weight: 800;
     font-size: 40px;
@@ -62,12 +60,22 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
-@media screen and (max-width: 500px) {
-    .main{
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
     }
   }
-
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
 .header_navigation i{
     text-decoration: none;
     font-size: 20px;
@@ -116,26 +124,7 @@ right: 9%;
 top: 5%;
 bottom: 80%;
 }
-.contact{
-position: absolute;
-left: 12.18%;
-right: 76.6%;
-top: 70%;
-bottom: 80.96%;
-background: #85CFCF;
-border-radius: 9px;
-height: 30px;
-}
-.read{
-position: absolute;
-left: 28.12%;
-right: 60.66%;
-top: 70%;
-bottom: 80.96%;
-height: 30px;
-background: #312A64;
-border-radius: 9px;
-}
+
 .feature{
 position: absolute;
 left: 12.18%;
@@ -163,7 +152,7 @@ bottom: 60.31%;
 position: absolute;
 left: 48.58%;
 right: 12.1%;
-top: 120%;
+top: 122%;
 bottom: 66.79%;
 font-family: 'Outfit';
 font-style: normal;
@@ -234,7 +223,7 @@ bottom: 45.38%;
 font-family: 'Outfit';
 font-style: normal;
 font-weight: 400;
-font-size: 32.2673px;
+font-size: 40px;
 line-height: 30px;
 text-transform: capitalize;
 color: #FFFFFF;
@@ -489,7 +478,7 @@ line-height: normal;
     align-items: baseline;
     justify-content: space-around;
     width: 90%;
-    margin: 210% auto 60px;
+    margin: 204% auto 60px;
 }
 .container>div>h2{
     color: #F6F5F5;
@@ -515,19 +504,4 @@ line-height: normal;
 }
 .container>div>ul>li>a:hover{
     left: 8px;
-}
-.container>div>form{
-    background-color: var(--light-blue);
-    margin: 20px 0 10px;
-    padding: 6px 14px;
-    border-radius: 7px;
-    width: 100%;
-}
-.container>div>form>input{
-    border: none;
-    outline: none;
-    font-size: 20px;
-    width: 270px;
-    background-color: transparent;
-    color: #F6F5F5;
 }
