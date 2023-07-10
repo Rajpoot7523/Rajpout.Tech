@@ -30,6 +30,9 @@ body{
  align-items: center;
  margin-left: 150px;   
 }
+.header img{
+    size: 50px;
+}
 .header span{
     font-weight: 800;
     font-size: 40px;
@@ -47,37 +50,7 @@ body{
     font-size: 26px;
     color: var(--accent-color);
 }
-.parent {
-    position: relative;
-}
-.parent.active .btn {
-    transform: translateX(210px);
-}
-.input {
-    outline: none;
-    border: none;
-    border-radius: 100px;
-    padding: 5px 10px;
-    width: 40px;
-    transition: width 0.3s ease;
-}
-.input::placeholder {
-    color: red;
-}
-.btn {
-    width: 40px;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 100px;
-    border: none;
-    background:var(--light-blue);
-    display: inline;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.3s ease;
-}
+
 .fa-solid {
     color: #ffffff;
 }
