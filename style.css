@@ -9,45 +9,36 @@
     --dark-blue:#312A64;
     --light-blue:#85CFCF;
 }
-body{
+
+@import url('https://fonts.googleapis.com/css?family=Outfit:400,500,700');
+
+html,body {
+    height:100%;
+    width: 100%;
     background-color: #000235;
-    
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
-    height: 50px;
-    margin: 0 auto;
-    font-family: outfit;
-    background-color:var(--dark-blue);
-    
-}
-
-.header_title{
- margin: 0;
- display: flex;
- align-items: center;
- margin-left: 150px;   
-}
-
-.header span{
-    font-weight: 800;
-    font-size: 40px;
-    margin-left: 12px;
-    color: var(--accent-color);
-}
-.header_navigation {
-    display: flex;
-    align-items: center;
-    height: 52px;
-}
-.header_navigation a {
-    text-decoration: none;
-    margin-left: 29px;
-    font-size: 26px;
-    color: var(--accent-color);
-}
+    .navbar{
+        padding: .8rem;
+        
+    }
+     .nav-link{
+        font-size: 20px;
+        text-decoration: none;
+        font-family: sans-serif;
+        position: relative;
+        padding: 2px;
+        color: var(--accent-color);
+        
+        }
+        header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+            width: 100%;
+            background-color: #85CFCF;
+           
+    }
+   
 
 .fa-solid {
     color: #ffffff;
@@ -70,12 +61,7 @@ body{
       width: 100%;
     }
   }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
-    }
-  }
+ 
 .header_navigation i{
     text-decoration: none;
     font-size: 20px;
@@ -87,7 +73,7 @@ body{
 /* main_hero  */
 .main_hero h1
 {
-position: absolute;
+
 left: 12.18%;
 right: 44.26%;
 top: 14.62%;
@@ -103,7 +89,7 @@ color: #F6F5F5;}
 
 .main_hero h4
 {
-position: absolute;
+
 left: 12%;
 right: 40%;
 top: 51%;
@@ -118,7 +104,7 @@ color: #F6F5F5;}
 
 .main_hero img
 {
-position: absolute;
+
 left: 55%;
 right: 9%;
 top: 5%;
@@ -126,7 +112,7 @@ bottom: 80%;
 }
 
 .feature{
-position: absolute;
+
 left: 12.18%;
 right: 11.11%;
 top: 82%;
@@ -136,20 +122,20 @@ height: 76px;
 }
 .feat{
 left: 12.18%;
-position: absolute;
+
 right: 11.11%;
 top: 75%;
 color: #ffffff;
 }
 .hero img {
-position: absolute;
+
 left: 12.18%;
 right: 11.31%;
 top: 100%;
 bottom: 60.31%;
 }
 .hero h1{
-position: absolute;
+
 left: 48.58%;
 right: 12.1%;
 top: 122%;
@@ -166,7 +152,7 @@ text-transform: capitalize;
 color: #F6F5F5;
 }
 .hero h2{
-position: absolute;
+
 left: 48.5%;
 right: 12.05%;
 top: 152.28%;
@@ -179,14 +165,14 @@ line-height: 48px;
 color: #F6F5F5;
 }
 .hero_end img{
-position: absolute;
+
 left: 52.69%;
 right: 13.26%;
 top: 180%;
 bottom: 46.23%;
 }
 .hero_end h1{
-    position: absolute;
+    
     left: 13.39%;
     right: 46.56%;
     top: 190%;
@@ -202,7 +188,7 @@ bottom: 46.23%;
 
 }
 .hero_end h3{
-position: absolute;
+
 left: 13.66%;
 right: 45.68%;
 top: 220%;
@@ -215,7 +201,7 @@ line-height: 48px;
 color: #F6F5F5;
 }
 .testimonial h1{
-position: absolute;
+
 left: 41.37%;
 right: 33.61%;
 top: 250%;
@@ -229,7 +215,7 @@ text-transform: capitalize;
 color: #FFFFFF;
 }
 .testimonial h3{
-position: absolute;
+
 left: 26.92%;
 right: 30.79%;
 top: 255%;
@@ -250,7 +236,7 @@ color: #F6F5F5;
     border-radius: 23.663px;
     opacity: 0.800000011920929;
     background-color: #332B66;
-    position: absolute;
+    
     right: 16.05%;
     left: 12%;
     top: 297%;
@@ -262,7 +248,7 @@ color: #F6F5F5;
     border-radius: 23.663px;
     opacity: 0.800000011920929;
     background-color: #332B66;
-    position: absolute;
+    
     right: 16.05%;
     left: 38%;
     top: 297%;
@@ -274,28 +260,28 @@ color: #F6F5F5;
     border-radius: 23.663px;
     opacity: 0.800000011920929;
     background-color: #332B66;
-    position: absolute;
+    
     right: 16.05%;
     left: 64%;
     top: 297%;
     bottom: 22.08%; 
 }
 .test1{
-    position: absolute;
+    
     right: 16.05%;
     left: 20%;
     top: 290%;
     bottom: 22.08%; 
 }
 .test2{
-    position: absolute;
+    
     right: 16.05%;
     left: 46%;
     top: 290%;
     bottom: 22.08%; 
 }
 .test3{
-    position: absolute;
+    
     right: 16.05%;
     left: 72%;
     top: 290%;
@@ -303,7 +289,7 @@ color: #F6F5F5;
 }
 
 .Box h2{
-    position: absolute;
+    
     left: 18%;
     right: 33.61%;
     top: 310%;
@@ -328,7 +314,7 @@ color: #F6F5F5;
     font-style: normal;
     font-weight: 400;
     line-height: 29.924px;
-    position: absolute;
+    
     left: 15%;
     right: 33.61%;
     top: 317%;
@@ -339,7 +325,7 @@ color: #F6F5F5;
 width: 156.156px;
 flex-direction: column;
 justify-content: center;
-    position: absolute;
+    
     left: 45%;
     right: 33.61%;
     top: 312%;
@@ -357,7 +343,7 @@ line-height: 30.235px;
 width: 274.907px;
 flex-direction: column;
 justify-content: center;
-    position: absolute;
+    
     left: 41%;
     right: 33.61%;
     top: 330%;
@@ -374,7 +360,7 @@ line-height: 29.924px;
 width: 108.676px;
 flex-direction: column;
 justify-content: center;
-    position: absolute;
+    
     left: 72%;
     right: 33.61%;
     top: 312%;
@@ -393,7 +379,7 @@ width: 312.52px;
 height: 239px;
 flex-direction: column;
 justify-content: center;
-    position: absolute;
+    
     left: 66%;
     right: 33.61%;
     top: 313%;
@@ -410,7 +396,7 @@ line-height: 29.924px;
 height: 402px;
 border-radius: 35px;
 background: linear-gradient(311deg, #AFDADA 0%, rgba(49, 42, 100, 0.61) 77.19%);
-    position: absolute;
+    
     left: 12%;
     right: 33.61%;
     top: 355%;
@@ -428,7 +414,7 @@ font-size: 40.023px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-    position: absolute;
+    
     left: 25%;
     right: 33.61%;
     top: 18px;  
@@ -438,7 +424,7 @@ line-height: normal;
 width: 582.351px;
 height: 65px;
 flex-direction: column;
-    position: absolute;
+    
     left: 28%;
     right: 33.61%;
     top: 65px;  
@@ -454,7 +440,7 @@ line-height: normal;
 height: 84.048px;
 border-radius: 12.007px;
 background: #000;
-    position: absolute;
+    
     left: 30%;
     top: 270px; 
 }
@@ -470,7 +456,7 @@ font-size: 40.517px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-    position: absolute;
+    
     top: 16px; 
 }
 .container{
@@ -505,3 +491,19 @@ line-height: normal;
 .container>div>ul>li>a:hover{
     left: 8px;
 }
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
