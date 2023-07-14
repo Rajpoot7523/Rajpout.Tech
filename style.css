@@ -11,22 +11,20 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Outfit:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
 
 html,body {
     height:100%;
     width: 100%;
     background-color: #000235;
 }
-    .navbar{
-        padding: .8rem;
-        
-    }
      .nav-link{
         font-size: 20px;
         text-decoration: none;
         font-family: outfit;
-        color: var(--accent-color);
-        justify-content: space-around;
+        color:var(--accent-color);
+        justify-content:space-between;
         }
         header {
             display: flex;
@@ -34,17 +32,6 @@ html,body {
             background-color: var(--dark-blue);
             padding: 0.1rem;
     }
-   
-
-.fa-solid {
-    color: #ffffff;
-}
-.parent.active .input {
-    width: 200px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
 
 .header_navigation i{
     text-decoration: none;
@@ -194,18 +181,15 @@ color: #F6F5F5;
     border-radius: 23.663px;
     opacity: 0.800000011920929;
     background-color: #332B66;
-    padding-top: 1.2rem;
+    padding-top: 2.2rem;
     }
 .test1{
     
     padding-top: 1.1rem;
-     
-}
+     }
 .test2{
     
-    
     padding-top: 1.1rem;
-    bottom: 22.08%; 
 }
 .test3{
     
@@ -235,9 +219,8 @@ color: #F6F5F5;
     font-style: normal;
     font-weight: 400;
     line-height: 29.924px;
-    padding-top: 1.3rem;
-    bottom: 45.38%;
-}
+    padding-top: .2rem;
+    }
 .Box2 h2{
     display: flex;
 width: 156.156px;
