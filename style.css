@@ -24,13 +24,27 @@ html,body {
         text-decoration: none;
         font-family: outfit;
         color:var(--accent-color);
-        justify-content:space-between;
+        
+          }
+          span{
+            margin-left: 12px;
+          }
+          .navbar-brand{
+            margin-left: 12px;
+              
+        }
+        .collapse{
+            float: right;
+            align-items: center;
+          padding: .8rem;
+          margin-left: 43.3rem;            
         }
         header {
-            display: flex;
-            width: 100%;
-            background-color: var(--dark-blue);
-            padding: 0.1rem;
+        display: flex;
+        width: 100%;
+        background-color: var(--dark-blue);
+        padding: 0.1rem;
+        height: 50px;
     }
 
 .header_navigation i{
@@ -44,6 +58,10 @@ html,body {
    margin: 0 13rem;
     
 }
+#main-cat1{
+    float: left;
+}
+
 /* main_hero  */
 .main_hero h1
 {
