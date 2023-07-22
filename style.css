@@ -13,7 +13,18 @@
 @import url('https://fonts.googleapis.com/css?family=Outfit:400,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
-
+@media (width < 900px){
+ .client-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+ }    
+}
+@media (width < 600px){
+    .client-grid{
+       grid-template-columns: repeat(1, 1fr);
+       gap: 1rem;
+    }    
+   }
 html,body {
     height:100%;
     width: 100%;
@@ -162,6 +173,7 @@ color: #F6F5F5;
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    
 }
 .client-card{
     padding: 1.5rem;
