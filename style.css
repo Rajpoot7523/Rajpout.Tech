@@ -71,13 +71,6 @@ header{
     color: red;
 }
 /* header ends*/
-.main{
-   
-    
-}
-#main-cat1{
-    float: left;
-}
 
 /* main_hero  */
 .main_hero h1
@@ -132,7 +125,7 @@ align-items: center;
 text-transform: capitalize;
 color: #F6F5F5;
 }
-.hero h2{
+.hero p{
 
 padding-top: 1.1rem;
 font-family: 'Roboto';

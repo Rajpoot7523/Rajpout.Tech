@@ -8,10 +8,13 @@
     <link rel = "icon" href = "images/logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="container mx-auto">
     <header>
+        <a href="logo"><img src="images/logo.png" alt="logo"></a>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
     <nav class ="flex justify-between sticky-top">
         <div class=" item-center">Rajpout.Tech</div>
         <ul class="navbar">
@@ -24,14 +27,22 @@
         <hr>
     </header>
     <!-- main code -->
-    <main>
-        <section>
+    <section class="hero row flex contain">
+        <div class="hero-contain">
+            <h1>Streamlined Solutions for a Connected World</h1>
+            <p>we are passionate about leveraging technology to empower businesses and drive their success.</p>
+        </div>
+        <div class="hero-img">
+            <img src="images/image 01.png" alt="image 01">
+        </div>
+    </section> 
+    <!--   
     <div class="main">
         <div id="main-cat1">
-       <span>Streamlined Solutions for a Connected World</span>
-        <p>we are passionate about leveraging technology to empower businesses and drive their success.</p>
+       
+        
         </div>
-        <img src="images/image 01.png" alt="image 01">
+        -->
     <h1 class="feat">Featured on</h1>
     <div class="feature">
         <img src="images/image 5.png" alt="image 05">
@@ -100,7 +111,6 @@
 </div>
 </div>
 </section>
-</main>
 <!-- End main code -->
 <footer>
     <div class="footer">
