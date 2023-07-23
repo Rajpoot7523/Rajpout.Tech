@@ -13,15 +13,15 @@
 @import url('https://fonts.googleapis.com/css?family=Outfit:400,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
-@media (width < 900px){
- .client-grid{
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width:1000px){
+ .container{
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
  }    
 }
-@media (width < 600px){
+@media screen and (max-width < 600px){
     .client-grid{
-       grid-template-columns: repeat(1, 1fr);
+       grid-template-columns: repeat(2, 1fr);
        gap: 1rem;
     }    
    }
@@ -29,25 +29,42 @@ html,body {
     height:100%;
     width: 100%;
     background-color: #000235;
+    scroll-behavior: smooth;
 }
 header{
     background-color: transparent;
     }
+    .sticky-top{
+        width: 100%;
+        position: fixed;
+        left: 10px;
+        padding-left: 0 10px;
+    }
+
 .mx-auto{
     margin-left:auto;
     margin-right:auto;
 }
 .container{
     max-width: 80vw;
+    
 }
 .flex{
     display: flex;
     color: #F6F5F5;
     font-weight: bold;
     align-items: center;
+    
 }
-.items-center{
+.item-center{
     align-items: center;
+}
+.item-center a{
+    text-decoration: none;
+    margin-left: 12px;
+    color: #ffffff;
+       
+    
 }
 .justify-between{
     justify-content: space-between;
@@ -55,7 +72,6 @@ header{
 .navbar{
     display: flex;
     color: #F6F5F5;
-    padding: 1rem;
 }
 .navbar li{
  list-style: none;
@@ -105,71 +121,29 @@ color: #ffffff;
 }
 
 /* hero */
-.main_hero h1
-{
 
-padding-top: .8rem;
-font-family: 'Outfit';
+.testimonial span{
+padding-top: 1.2rem;
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 70px;
-line-height: 68px;
+font-size: 60px;
+line-height: 48px;
+color: #F6F5F5;
 text-transform: capitalize;
-color: #F6F5F5;}
 
-.main_hero h4
-{
-
-padding-top: .2rem;
+}
+.section-header{
+padding-top: 1.2rem;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
-line-height: 38px;
-color: #F6F5F5;}
-
-.main_hero img
-{
-
-padding-top: .5rem;
-}
-
-.hero_end img{
-
-padding-top: 1.8rem;
-}
-.hero_end h1{
-    
-    padding-top: 1.9rem;
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 88px;
-    text-transform: capitalize;
-    color: #F6F5F5;
-
-}
-.hero_end h3{
-
-padding-top: 2.2rem;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
+font-size: 40px;
 line-height: 48px;
 color: #F6F5F5;
-}
-.testimonial span{
-    padding-top: 2.2rem;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 48px;
-color: #F6F5F5;
-
-}
+text-transform: capitalize;
+text-align: center;
+} 
 .client-grid{
     margin-top: 4rem;
     display: flex;
@@ -283,6 +257,7 @@ line-height: normal;
 .footer>div>ul>li>a:hover{
     left: 8px;
 }
+
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
