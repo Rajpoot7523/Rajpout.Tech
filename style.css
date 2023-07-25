@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,21 +13,6 @@
     --light-blue:#85CFCF;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Outfit:400,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&display=swap');
-@media screen and (max-width:1000px){
- .container{
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
- }    
-}
-@media screen and (max-width < 600px){
-    .client-grid{
-       grid-template-columns: repeat(2, 1fr);
-       gap: 1rem;
-    }    
-   }
 html,body {
     height:100%;
     width: 100%;
@@ -158,7 +146,7 @@ text-align: center;
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    
+    justify-content: center;    
 }
 .client-card{
     padding: 1.5rem;
@@ -186,14 +174,14 @@ text-align: center;
 }
 .big{
     padding-top: 3.8rem;
-    margin: auto;
+
 }
 .box{
-    width: 990px;
+    max-width: 900px;
     height: 300px;
     border-radius: 35px;
     background: linear-gradient(311deg, #AFDADA 0%, rgba(49, 42, 100, 0.61) 77.19%);
-    
+    margin: auto;
 
     }
 .box h5{
@@ -241,6 +229,11 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+.logo img{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
 .footer{
     display: flex;
     align-items: baseline;
@@ -273,6 +266,17 @@ line-height: normal;
 .footer>div>ul>li>a:hover{
     left: 8px;
 }
+    @media screen and (max-width:900px){
+    .hero{
+       flex-direction: column;
+        padding-top: 1.8rem;
+    }    
+   }
+   @media screen and (max-width:1100px){
+       .box{
+          height: 400px;
+       }    
+      }
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
