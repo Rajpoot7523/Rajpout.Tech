@@ -8,7 +8,15 @@
     <link rel = "icon" href = "images/rt.png" type = "image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="container mx-auto">
@@ -23,6 +31,10 @@
             <li class="link"><a href="#">Contact</a></li>
             <li class="link"><a href="#">services</a></li>
         </ul>
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        
+        </label>
         </nav>
         <hr>
     </header>
@@ -52,7 +64,8 @@
         </div> 
         <div class="hero-contain">
             <h1>We offer a comprehensive range of services</h1>
-            <p>Our expertise spans across various domains, including software development, cybersecurity, cloud computing, data analytics, and more.</p>
+            <p>Our expertise spans across various domains, including software development, 
+                cybersecurity, cloud computing, data analytics, and more.</p>
         </div>
         
         </section>
@@ -138,9 +151,13 @@
         </div> 
       
     </div>
-    Copyright &copy;Rajpout.Tech
+    
 </footer>
 <hr>
+<div class="copy">
+    <p>Copyright &copy;Rajpout.Tech All Rights Reserved</p>
+</div>
+
 </div>
 </body>
 </html>

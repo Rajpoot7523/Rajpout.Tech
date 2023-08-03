@@ -21,12 +21,22 @@ html,body {
 }
 header{
     background-color:var(--dark-blue);
+    padding: 0 120px;
     }
     .sticky-top{
         width: 100%;
         position: fixed;
         left: 0px;
         padding-left: 0 10px;
+    }
+    #icon{
+        color: #F6F5F5;
+        font-size: 30px;
+        line-height: 80px;
+        float: right;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
     }
 
 .mx-auto{
@@ -62,11 +72,12 @@ header{
     height: 50px;
 }
 .justify-between{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .navbar{
     display: flex;
     color: #F6F5F5;
+    padding: 0;
 }
 .navbar li{
  list-style: none;
@@ -84,7 +95,7 @@ header{
 /* header ends*/
 
 .hero h1{
-padding-top: 1.2rem;
+padding-top: 2.2rem;
 font-family: 'Outfit';
 font-style: normal;
 font-weight: 700;
@@ -146,7 +157,8 @@ text-align: center;
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    justify-content: center;    
+    justify-content: center;
+    width: 100%;    
 }
 .client-card{
     padding: 1.5rem;
@@ -266,18 +278,61 @@ line-height: normal;
 .footer>div>ul>li>a:hover{
     left: 8px;
 }
-    @media screen and (max-width:900px){
+.copy{
+    width: 100%;
+    background-color:transparent;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: #F6F5F5;
+    border: 1px solid gba(0,0,0,0.15);
+}
+    @media screen and (max-width:909px){
     .hero{
        flex-direction: column;
         padding-top: 1.8rem;
-    }    
+    }  
+    #icon{
+        display: block;
+        margin-right: 40px;
+    }
+    .flex ul{
+         position: absolute;
+         width: 100vw;
+         height: 350px;
+         background: var(--dark-blue);
+         top: 30px;
+         left: -100%;
+         transition: .2s;
+         
+    }
+    .sticky-top ul{
+        display: block;
+        margin: 50px 0px;
+        line-height: 80px;
+        text-align: center;  
+    }
+    .flex ul.show{
+        left: 25px;
+    }
+   
    }
    @media screen and (max-width:1100px){
        .box{
           height: 400px;
        }    
       }
-
+      @media screen and (max-width:900px){
+        .client-card{
+           flex: 100%;
+           max-width: 80%;
+        }    
+       }
+       @media screen and (max-width:600px){
+        .client-card{
+            flex: 100%;
+            max-width: 100%;
+         }    
+       }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
