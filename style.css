@@ -327,11 +327,14 @@ line-height: normal;
            max-width: 80%;
         }    
        }
-       @media screen and (max-width:600px){
-        .client-card{
-            flex: 100%;
-            max-width: 100%;
-         }    
+       @media screen and (max-width:500px){
+        .client-grid{
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           flex-wrap: wrap;
+         }
+           
        }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
